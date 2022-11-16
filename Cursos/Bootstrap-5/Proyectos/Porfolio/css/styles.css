@@ -1,0 +1,249 @@
+body {
+  background-color: #f2f2f2;
+  font-family: 'Roboto', sans-serif;
+}
+
+header .nav {
+  min-height: 80px;
+  overflow: hidden;
+  background: #FFF;
+}
+
+header .logo h2,
+header .logo p {
+  font-size: 16px;
+  display: inline-block;
+}
+
+header .logo .icon {
+  color: #bfbfbf;  
+}
+
+header .logo svg {
+  width: 20px;
+  height: 20px;
+}
+
+header .logo p {
+  color: #777777;
+}
+
+
+
+header .menu .c1 {background: #3da5e2;}
+header .menu .c2 {background: #005385;}
+header .menu .c3 {background: #003855;}
+
+header .menu .c1:hover {background: #1ba0ef;}
+header .menu .c2:hover {background: #00426a;}
+header .menu .c3:hover {background: #002d44;}
+
+/* MAIN */
+/* Portfolio */
+
+.portfolio {
+  border-top: 5px solid #3da5e2;
+  background: #fff;
+}
+
+.portfolio .title {
+  color: #3da5e2;
+  font-weight: 300;
+}
+
+.portfolio .galery .container-img {
+max-height: 180px;
+overflow: hidden;
+}
+
+.portfolio .galery .container-img a {
+  background: #3da5e2;
+  display: inline-block;
+}
+
+.portfolio .galery .container-img img:hover {
+  opacity: 0.3;
+}
+
+/* Ventana Modal */
+
+.modal-dialog {
+  max-width: 900px;
+}
+
+.about .picture .name {
+  color: #545454;
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.about .info .title {
+  color: #005385;
+  font-weight: 300;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.about .info .resume {
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.about .info .label {
+  font-size: 18px;
+  font-weight: 500;
+  color: #005385;
+  margin-bottom: 5px;
+}
+
+.about .info .progress {
+  background: #005385;
+  border-radius: 0;
+  height: 25px;
+}
+
+.about .info .progress .progress-bar {
+  background: #3da5e2;
+  line-height: 25px;
+  padding-left: 10px;
+}
+
+/* Contact */
+.contact{
+  border-top: 1px solid #cbcbcb;
+  border-bottom: 1px solid #cbcbcb;
+}
+
+
+
+.contact .title {
+  color: #005385;
+  font-weight: 300;
+  font-size: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contact .form input[type='text'],
+.contact .form input[type='email'],
+.contact .form textarea {
+  padding: 15px;
+  border: none;
+  border-radius: 0;
+}
+
+.contact .form textarea {
+  height: 150px;
+  min-height: 150px;
+  max-height: 250px;
+}
+
+.contact .form .button {
+  background: #3da5e2;
+  color: #fff;
+  border: none;
+  padding: 7px 30px;
+  cursor: pointer;
+  width: auto;
+}
+
+.contact .form .button:hover {
+  background: #1ba0ef;
+}
+
+/* Footer */
+.social {
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+.social .icon {
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  background: #cbcbcb;
+  display: inline-block;
+  margin: 0 20px;
+  text-decoration: none;
+  border-radius: 100px;
+  transition: all 03s ease;
+}
+
+.social .icon svg {
+  width: 40px;
+  height: 40px;
+}
+
+.social .twitter {background: #1da1f2;}
+.social .instagram {background: #BC1D91;}
+.social .facebook {background: #3b5998;}
+
+@media (max-width: 576px){
+  .social {
+    padding: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .social .icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .social .icon svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  header .menu {
+    width: 100%;
+    min-height: 60px;
+  }
+  
+  header .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header .nav .logo {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 768px){
+  header .menu {
+    width: 100%;
+    min-height: 70px;
+  }
+  
+  header .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 992px){
+  .logo{
+    height: 76px;
+  }
+  header .menu a {
+    width: 100%;
+  }
+
+  .portfolio .galery .container-img:nth-child(1) {order: 1;}
+  .portfolio .galery .container-img:nth-child(2) {order: 3;}
+  .portfolio .galery .container-img:nth-child(3) {order: 6;}
+  .portfolio .galery .container-img:nth-child(4) {order: 2;}
+  .portfolio .galery .container-img:nth-child(5) {order: 5;}
+  .portfolio .galery .container-img:nth-child(6) {order: 4;}
+  .portfolio .galery .container-img:nth-child(7) {order: 7;}
+}
+
+@media (max-width: 1200px){}
+
+@media (max-width: 1400px){}
+
